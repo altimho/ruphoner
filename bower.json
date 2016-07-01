@@ -1,0 +1,23 @@
+{
+  "name": "altimho-ruphoner",
+  "description": "AngularJS filter for russian phone numbers formatting.",
+  "main": "dist/ruphoner.js",
+  "authors": [
+    "Igor Karpinskiy <ik@altimho.ru>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "phone",
+    "filter",
+    "russian"
+  ],
+  "homepage": "https://github.com/altimho/ruphoner",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
