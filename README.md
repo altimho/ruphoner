@@ -8,7 +8,12 @@ If input string is valid russian phone number (11-digits, begins with +7, 7 or 8
 Using
 -----
 
-Include `altimho.ruphoner` module as your app dependency (`angular.module('example_app', [ 'altimho.ruphoner' ])`).
+Include `altimho.ruphoner` module as your app dependency
+
+```javascript
+angular
+  .module('example_app', [ 'altimho.ruphoner' ]);
+```
 
 Use filter in templates:
 
