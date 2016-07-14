@@ -52,4 +52,33 @@ describe('RuPhoner filter', function () {
 
   });
 
+  describe('shoud not fail invalid values', function () {
+
+    it ('undefined value', function () {
+      expect(function () { ruphoner() }).not.toThrow();
+      expect(function () { ruphoner(undefined) }).not.toThrow();
+    });
+
+    it ('true value', function () {
+      expect(function () { ruphoner(true) }).not.toThrow();
+    });
+
+    it ('false value', function () {
+      expect(function () { ruphoner(false) }).not.toThrow();
+    });
+
+    it ('null value', function () {
+      expect(function () { ruphoner(null) }).not.toThrow();
+    });
+
+    it ('Array value', function () {
+      expect(function () { ruphoner([1, 2, 3]) }).not.toThrow();
+    });
+
+    it ('Object value', function () {
+      expect(function () { ruphoner({ 'a': 1, 'b': 2 }) }).not.toThrow();
+    });
+
+  });
+
 });

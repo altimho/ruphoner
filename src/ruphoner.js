@@ -6,7 +6,7 @@
 
   function filter() {
     return function ruPhonerFilter(input) {
-      var phone = input.toString().trim();
+      var phone = (input && input.toString ? input : '').toString().trim();
 
       if (
         phone.indexOf('7') === 0 ||
