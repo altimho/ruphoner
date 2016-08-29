@@ -30,6 +30,10 @@ describe('RuPhoner filter', function () {
       expect(ruphoner(79876543210)).toBe('+7 987 654-32-10');
     });
 
+    it('partialy formatted russian number', function () {
+      expect(ruphoner('+7 9876543210')).toBe('+7 987 654-32-10');
+    });
+
     it('already formatted russian number with 4-digit code', function () {
       expect(ruphoner('8 9876 543210')).toBe('+7 9876 54-32-10');
     });
