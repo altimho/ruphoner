@@ -16,7 +16,7 @@
 
         if (phone.replace(/\D/gi, '').length === RU_PHONE_LENGTH) {
           phone = phone.replace(
-            /^(?:\+7|7|8)(\d{3}|\D*\d{3,5}\D*)(.*)$/g,
+            /^(?:\+7|7|8)\D*(\d{3,5}\D+|\d{3})(.*)$/g,
             function buildPhone(match, region, number) {
               return [
                 '+7',
